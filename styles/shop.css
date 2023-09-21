@@ -185,138 +185,152 @@ body{
 
 
 
+.carousel{
+    
+    top: 10px;
+    gap: 100px;
+    margin-bottom: 150px;
+}
 
 
-
-
-
-section {
-    margin-top: 100px;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    place-items: center;
-   
-  }
-  .row {
+.carousel-inner img{
+    width: auto;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-wrap: wrap;
-
-  }
-  .column {
-    width: 100%;
-    padding: 0 5em 5em 5em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
-  .card {
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-around; /* Adjust the spacing between cards as needed */
+  flex-wrap: wrap;
+ gap: 100px ;
+}
+
+.card {
+  position: relative;
+  width: 220px;
+  height: 380px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px; /* Adjust the margin between cards as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+  
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
     width: 100%;
     height: 100%;
-    padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, rgb(176, 98, 255) 50%);
-    background-size: 100% 200%;
-    background-position: 0 2.5%;
-    border-radius: 5px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
+    background: #FF0090;
+    transform: skewY(345deg);
     transition: 0.5s;
   }
-  h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #1f194c;
-    margin: 1em 0;
+  
+  .card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
   }
-  p {
-    color: #575a7b;
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-  }
-  .icon-wrapper {
-    background-color: rgb(176, 98, 255);
-    position: relative;
-    margin: auto;
-    font-size: 30px;
-    height: 2.5em;
-    width: 2.5em;
-    color: #ffffff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    transition: 0.5s;
-  }
-  .card:hover {
-    background-position: 0 100%;
-  }
-  .card:hover .icon-wrapper {
-    background-color: #ffffff;
-    color: rgb(176, 98, 255);
-  }
-  .card:hover h3 {
-    color: #ffffff;
-  }
-  .card:hover p {
-    color: #f0f0f0;
-  }
+  
+  .card::after {
  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+  }
+  
+  .card .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .card .contentBox h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .card .contentBox .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .card .contentBox .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: #FF0090;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+  
+  .card:hover .contentBox .buy {
+    top: -50px;
+    opacity: 1;
+  }
+  
+  .mouse {
+    max-width: 100%;
+    height: auto;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.back-to-top-btn {
-    display: none; 
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    padding: 1px 10px;
-    background-color: #2bd576;
-    color: #eeeeee;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid white;
-    box-shadow: 0 0 10px #ace2af;
-    cursor: pointer;
-    z-index: 99999;
-    border-radius: 10px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+.contentBox h2{
+    color: #000;
 }
-.back-to-top-btn:hover {
-    background-color: #4A0166;
-    box-shadow: 0 0 15px #4A0166; 
+
+.contentBox h3{
+    color: #000;
 }
 
 
 
 
+
+
+  
 footer{
+    margin-top: 500px;
     position: relative;
     bottom: 0;
   }
