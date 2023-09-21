@@ -192,11 +192,11 @@ body{
 
 section {
     margin-top: 100px;
-    height: 100vh;
+    height:100vh;
     width: 100%;
     display: grid;
     place-items: center;
-    margin-bottom: 300px;
+    
    
   }
   .row {
@@ -213,7 +213,7 @@ section {
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, rgb(176, 98, 255) 50%);
+    background: linear-gradient(#ffffff 50%, #4A0166 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
     border-radius: 5px;
@@ -234,7 +234,7 @@ section {
     letter-spacing: 0.03em;
   }
   .icon-wrapper {
-    background-color: rgb(176, 98, 255);
+    background-color: #4A0166;
     position: relative;
     margin: auto;
     font-size: 30px;
@@ -251,7 +251,7 @@ section {
   }
   .card:hover .icon-wrapper {
     background-color: #ffffff;
-    color: rgb(176, 98, 255);
+    color: #4A0166;
   }
   .card:hover h3 {
     color: #ffffff;
@@ -318,6 +318,7 @@ section {
 
 
 footer{
+    margin-top: 500px;
     position: relative;
     bottom: 0;
   }
