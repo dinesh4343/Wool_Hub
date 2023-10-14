@@ -69,7 +69,7 @@ p.hero-smalltext{
   font-weight: 300 !important;
 }
 .hero {
-  background-image: url(/assets/a2.jpg);
+  background-image: url("https://img.freepik.com/free-photo/multicoloured-sewing-threads-with-copy-space_23-2148355079.jpg?w=1380&t=st=1697308035~exp=1697308635~hmac=5b38d23a280b683432c15521fcf6adab9068369ed9749e0a621891530c543224");
 
   background-color: #FFFFFF;
   background-repeat: no-repeat; 
