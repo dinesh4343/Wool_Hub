@@ -131,18 +131,217 @@
       }
   
 
-@media (max-width:720px){
-    .footer{
+
+      @media (max-width: 880px) {
+
+        .footer-distributed{
+            font: bold 14px sans-serif;
+        }
     
-    text-align:left;
-    padding:5%;
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        .footer-distributed .footer-center i{
+            margin-left: 0;
+        }
+    
     }
-    .footer .footer-row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .footer-row a i{
-    margin:0% 3%;
-    }
-    }
+    
+      
+@media all and (max-width: 1200px) {
+  /* CARD STYLES */  
+  .cards-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .card {
+    margin: 15px 30px 0 30px !important;
+  }
+  .card_large {
+    margin: 40px 30px 25px 30px !important;
+  }
+  /* HERO STYLES */
+  .hero-smalltext {
+    color: #fcfcfc;
+  }
+}
+
+@media all and (max-width: 950px) {
+  /* TEXT STYLES */
+  h1.pHeader, h2.pHeader, h2.sHeader {
+    font-size: 28px;
+  }
+  h3.pHeader {
+    font-size: 24px;
+  }
+  h1.pHeader, h2.pHeader, h3.pHeader {
+    max-width: 500px;
+  }
+  /* HERO STYLES */
+  .hero-smalltext {
+    color: #fcfcfc;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+  /* TEXT STYLES */
+  h1.pHeader, h2.pHeader, h2.sHeader {
+    font-size: 22px;
+  }
+  h3.pHeader {
+    font-size: 18px;
+  }
+  p.smallText {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  h1.pHeader, h2.pHeader, h3.pHeader {
+    max-width: 350px;
+  }
+  /* CARD STYLES */  
+  .card, .card_large {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    margin: 30px !important;
+  } 
+  /* HERO STYLES */
+  .hero {
+    background-image: url('/assets/a2.jpg');
+  
+  }
+  .hero-content {
+    max-width: 450px;
+    position: absolute;
+    margin: 0 auto !important;
+    left: 10%;
+    top: 10%;
+ 
+   } 
+   
+   
+   .hero-smalltext {
+    color: #fcfcfc;
+  }
+   
+}
+
+@media all and (max-width: 600px) {
+  /* HERO STYLES */
+
+  div.hero-text {
+    top: 135%;
+    left: 60%;
+  }  
+  .mobileHide {
+    display: block;
+  }
+  .hero-smalltext {
+    color: #fcfcfc;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* TEXT STYLES */
+  h1.pHeader, h2.pHeader, h3.pHeader, h2.sHeader {
+    font-size: 48px !important;
+  }
+  p.smallText, ul li {
+    font-size: 36px !important;
+  }
+  .hero-smalltext {
+    color: #fcfcfc;
+  }
+  
+  /* HERO STYLES */
+  .hero-text {
+    top: 25% !important;
+    left: 60% !important;
+    position: absolute !important;
+  }
+  
+  /* BUTTON STYLES */
+  .btn {
+    min-width: 500px !important;
+    padding: 55px !important;
+  }
+  .btn-1 {
+    padding: 25px 0 18px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: #FFFFFF !important;
+    background-color: #F1539A !important;
+    background-image: none !important;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border: 4px solid transparent !important;
+    border-radius: 6px;
+    font-family: Proxima, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration:none !important;
+    vertical-align: middle;
+  }  
+  
+  /* CARD STYLES */  
+  .cards-list {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .card { 
+    width: 400px;
+    height: 460px;
+    margin: 50px 25px !important;
+  }
+  .card_large { 
+    width: 850px;
+    height: 600px;
+    margin: 80px 25px !important;
+  }
+  .card_image_large img {
+    width: 850px;
+    height: 600px;
+  }
+  .card_image img {
+    width: 400px;
+    height: 400px;
+  }
+  .card_label {
+    font-size: 20px;
+    width: 130px;
+    top: -450px;
+  }
+  .card_header {
+    font-size: 22px;
+    top: -450px;
+  }
+  .card_text {
+    top: -150px;
+  }
+  .card_badge {
+    width: 160px;
+    height: 160px;
+    left: 16rem;
+  }
+  .h3_text, .badge_text {
+    font-size: 32px !important;
+  }
+  .h3_text {
+    font-size: 38px !important;
+  }
+  .p_text {
+    font-size: 32px !important;
+  }
+  .btn2 {
+    font-size: 25px;
+    top: -16.5rem;
+    left: 2.5rem;
+    padding: 25px 35px;
+  }  
+}
+/* END MEDIA CSS */
